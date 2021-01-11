@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panghu-cv/xiaomi.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/panghu-cv/xiaomi.com/issues"
+  },
+  "homepage": "https://github.com/panghu-cv/xiaomi.com#readme"
 }
