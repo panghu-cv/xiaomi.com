@@ -201,6 +201,9 @@
   height: 42px;
   line-height: 42px;
 }
+.site-header > .wrapper > .header-nav > .nav-list > .nav-category > .site-category > .site-category-list-custom > .category-item:hover {
+  background-color: orange;
+}
 .site-header > .wrapper > .header-nav > .nav-list > .nav-category > .site-category > .site-category-list-custom > .category-item > a {
   color: #fff;
 }
@@ -257,7 +260,7 @@
 }
 .slider .carousel-indicators {
   position: absolute;
-  left: 700px;
+  left: 1100px;
 }
 .slider img {
   width: 1266px;

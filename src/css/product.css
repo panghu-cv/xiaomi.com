@@ -392,6 +392,10 @@ a {
 .main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > .title {
   font-size: 18px;
 }
+.main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > ul > .active {
+  border-color: #ff6700;
+  color: #ff6700;
+}
 .main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > ul > li {
   margin-right: 12px;
   margin-top: 10px;
@@ -407,14 +411,10 @@ a {
   font-size: 16px;
   text-align: center;
   cursor: pointer;
-}
-.main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > ul > li > a {
   color: #757575;
 }
 .main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > ul > li:hover {
   border-color: #ff6700;
-}
-.main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > ul > li:hover > a {
   color: #ff6700;
 }
 .main > .wrapper > .mi-detail > .product-con > .buy-option > .buy-box-child > .option-box > ul > li:nth-child(2n) {
