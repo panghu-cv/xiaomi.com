@@ -137,6 +137,7 @@
 }
 
 .site-header {
+  position: relative;
   height: 100px;
   > .wrapper {
     position: relative;
@@ -298,6 +299,14 @@
         position: relative;
         width: 296px;
         height: 50px;
+        &:hover{
+          >.search-text{
+            border-color: #b0b0b0;
+          }
+          >.search-btn{
+            border-color: #b0b0b0;
+          }
+        }
         > .search-text {
           position: absolute;
           right: 52px;
@@ -308,6 +317,7 @@
           line-height: 48px;
           outline: 0;
           border: 1px solid #e0e0e0;
+          border-right: 0;
           box-sizing: content-box;
         }
         > .search-btn {
@@ -323,6 +333,91 @@
           color: #616161;
           outline: 0;
           border: 1px solid #e0e0e0;
+          &:hover{
+            background: #ff6700;
+            color: #fff;
+        
+          }
+        }
+      }
+    }
+  }
+  // 第一个二级导航被点击时候需要添加的样式
+  >.first-active{
+    height: 230px !important;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+  }
+   // 第一个二级导航 
+  >.nav-first{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 24;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.3s;
+  
+    >.wrapper{
+      position: relative;
+      >.list-first{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 12px;
+        >li{
+          position: relative;
+    float: left;
+    width: 180px;
+    padding: 35px 12px 0;
+    text-align: center;
+    box-sizing: content-box;
+    &::before{
+      position: absolute;
+      left: 0;
+      top: 35px;
+      z-index: 1;
+      width: 1px;
+      height: 100px;
+      content: "";
+      background-color: #e0e0e0;
+    }
+    &:first-child::before{
+      position: absolute;
+      left: 0;
+      top: 35px;
+      z-index: 1;
+      width: 1px;
+      height: 100px;
+      content: "";
+      background-color:transparent;
+    }
+    >a{
+      color: #757575;
+      >.mi-img{
+        width: 160px;
+        height: 110px;
+        margin: 0 auto 16px;
+        text-align: center;
+        >img{
+          width: 160px;
+    height: 110px;
+        }
+      }
+      >.title{
+        color: #333;
+        margin: 0;
+        line-height: 20px;
+      }
+      >p{
+        margin: 0;
+        line-height: 20px;
+        color: #ff6700;
+      }
+    }
         }
       }
     }

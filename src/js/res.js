@@ -1,6 +1,5 @@
 import "./library/jquery.js";
 $(function () {
-  alert("没完成注册前注册按钮不可点击");
   let reg = /^.{4,16}/;
   let userInput = $("input");
   let btn = $(".btn-res");
@@ -26,9 +25,7 @@ $(function () {
         userInput[j].style.background == "blue" ? count++ : count;
       }
       count == 4? btn.removeAttr("disabled"):btn.attr("disabled", "disabled");
-      if(count==4){
-          alert("注册按钮可以点击了");
-      }
+      count==4&&btn.css("background","orange");
     };
   }
 });
