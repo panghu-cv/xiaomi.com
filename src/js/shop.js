@@ -98,7 +98,7 @@ if (shop) {
         });
 
         cookie.set("shop", JSON.stringify(shop2), 1); // 将不匹配的元素从新写进cookie
-        // location.reload();
+        location.reload();
       });
       //   增加
       $(".plus").on("click", function () {
@@ -107,14 +107,14 @@ if (shop) {
 
           return elm;
         });
-          let shop3 = shop.filter((elm) => {
-                    if (elm.id == $(this).attr("data-id")) {
-                      return elm.num;
-                    }
-                  });
-                  $(this).parent().parent().find(".goods-num")[0].attr("value","++shop3[0].num");
+        //   let shop3 = shop.filter((elm) => {
+        //             if (elm.id == $(this).attr("data-id")) {
+        //               return elm.num;
+        //             }
+        //           });
+        //           $(this).parent().parent().find(".goods-num")[0].attr("value","++shop3[0].num");
         cookie.set("shop", JSON.stringify(shop2), 1); // 将不匹配的元素从新写进cookie
-        // location.reload();
+        location.reload();
       });
       //    全选情况
       $(".total-check").on("click", function () {
